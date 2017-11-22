@@ -12,7 +12,11 @@ This project requires a recent version of tensorflow, and can run fast on CPU fo
 
 ## Usage
 
-You can train the model on the (MBTI) Myers-Briggs Personality Type Dataset available on [Kaggle](https://www.kaggle.com/datasnaek/mbti-type). The data set is the default dataset and is already present in the ./data directory of the project. This is a multi-label classification problem: the input is composed of sentences written by individuals belonging to the 16 different types of personalities according to the Myers-Briggs standards. The objective is to predict to which type of personality a individual belong. We split the dataset in 80% training data and 20% validation data (the sampling is uniform, each row has the same probability to be choosen as training or validation input). It is important to note that the categories are not balanced. Some personality types such as the INFJ are under-represented (1.5% of the US population is estimated to belong to this personality type).
+You can train the model on the (MBTI) Myers-Briggs Personality Type Dataset available on [Kaggle](https://www.kaggle.com/datasnaek/mbti-type). The data set is the default dataset and is already present in the ./data directory of the project. This is a multi-label classification problem: the input is composed of sentences written by individuals belonging to the 16 different types of personalities according to the Myers-Briggs standards. The objective is to predict to which type of personality a individual belong. We split the dataset in 80% training data and 20% validation data (the sampling is uniform, each row has the same probability to be choosen as training or validation input). It is important to note that the categories are not balanced. 
+
+![histogram](histogram.png)
+
+[source of the plot](https://www.kaggle.com/depture/multiclass-and-multi-output-classification)
 
 ### Training a model from scractch, using the default  (MBTI) Myers-Briggs Personality Type Dataset dataset.
 
@@ -29,6 +33,7 @@ Of course you can add any optional argument you want.
 
 Training with the default arguments gives the following results:
 
+![confusion matrix](conf_mat.png)
 
 ### Training a model from scratches, using any labelled text data set
 
