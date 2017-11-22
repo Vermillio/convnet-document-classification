@@ -26,7 +26,9 @@ Train the model with the following command
 `python train.py`
 
 Of course you can add any optional argument you want.
-Using the default parameters achieves >97 % accuracy on validation data (the default test of STSA). 
+
+Training with the default arguments gives the following results:
+
 
 ### Training a model from scratches, using any labelled text data set
 
